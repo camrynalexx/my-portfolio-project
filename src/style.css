@@ -1,0 +1,22 @@
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 64px;
+    color: #F89AC0;
+}
+
+
+.hero {
+    background-color: #EDE3E7;
+    color:#ffff;
+    margin: 0;
+    
+}
+
+.btn-branding {
+    background: #F89AC0;
+    color: white;
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 15px 30px;
+}
