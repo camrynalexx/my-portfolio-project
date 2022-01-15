@@ -1,22 +1,87 @@
-h1 {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 64px;
-    color: #F89AC0;
+body {
+  background: #ffff;
+  color: #75716f;
+  font-family: Playfair Display;
 }
 
+.navbar.navbar-expand-lg.navbar-light li a {
+  color: #ffff;
+}
+
+.navbar-brand {
+  color: #75716f !important;
+}
+
+h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 64px;
+  color: #f89ac0;
+}
 
 .hero {
-    background-color: #EDE3E7;
-    color:#ffff;
-    margin: 0;
-    
+  background-color: #ede3e7;
+  color: #ffff;
+  margin: 0;
 }
 
 .btn-branding {
-    background: #F89AC0;
-    color: white;
-    border-radius: 4px;
-    font-size: 18px;
-    line-height: 27px;
-    padding: 15px 30px;
+  background: #f89ac0;
+  color: white;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+.btn-branding:hover {
+  color: #ffff;
+  background: #f2c4d8;
+}
+
+.project-description p {
+  opacity: 70%;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.btn-branding-outline {
+  color: #ffff;
+  background: #75716f;
+  border: 1px solid #75716f;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+.btn-branding-outline:hover {
+  background: #ede3e7;
+  color: #ffff;
+  border: #ede3e7;
+}
+
+.fab {
+  color: #f89ac0;
+  display: inline-block;
+}
+
+.icon-text {
+  font-size: 20px;
+}
+
+i {
+  transition: all 100ms ease-in-out;
+}
+
+i:hover {
+  color: #ede3e7;
+}
+
+#icon-section a {
+  text-decoration: none;
+}
+
+#social-icons {
+  margin: 15px;
 }
