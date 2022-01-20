@@ -1,19 +1,32 @@
+:root {
+  --heading-font:  "Anton", "sans-serif";
+  --default-font:  "quicksand";
+  --default-color: 
+}
+
+
+
 body {
   background: #ffff;
-  color: #75716f;
-  font-family: Playfair Display;
+  color: #B9B9D1;
+  font-family: var(--default-font);
 }
 
 .navbar.navbar-expand-lg.navbar-light li a {
   color: #ffff;
 }
 
+.navbar.navbar-expand-lg.navbar-light li a:hover {
+  color: #f89ac0;
+}
+
+
 .navbar-brand {
-  color: #75716f !important;
+  color: #B9B9D1 !important;
 }
 
 h1 {
-  font-family: "Bebas Neue", cursive;
+  font-family: var(--heading-font);
   font-size: 64px;
   color: #f89ac0;
 }
@@ -29,6 +42,7 @@ h1 {
   color: white;
   border-radius: 4px;
   font-size: 18px;
+  font-weight: 900;
   line-height: 27px;
   padding: 15px 30px;
 }
@@ -38,19 +52,29 @@ h1 {
   background: #f2c4d8;
 }
 
+#project-head {
+  font-family: var(--heading-font);
+  font-size: 50px;
+}
+
 .project-description p {
-  opacity: 70%;
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
 }
 
+.timestamp {
+  opacity: 40%;
+  color: #f89ac0;
+}
+
 .btn-branding-outline {
   color: #ffff;
-  background: #75716f;
-  border: 1px solid #75716f;
+  background: #B9B9D1;
+  border: 1px solid #B9B9D1;
   border-radius: 4px;
   font-size: 18px;
+  font-weight: 900;
   line-height: 27px;
   padding: 15px 30px;
 }
@@ -61,9 +85,23 @@ h1 {
   border: #ede3e7;
 }
 
+.fas {
+  color: #f89ac0;
+  margin-left: 10px;
+}
+
 .fab {
   color: #f89ac0;
   display: inline-block;
+}
+
+.api-icon {
+  background: white;
+  border: white;
+}
+
+.api-icon:hover {
+  opacity: 30%;
 }
 
 .icon-text {
