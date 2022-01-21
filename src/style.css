@@ -1,14 +1,13 @@
 :root {
   --heading-font:  "Anton", "sans-serif";
   --default-font:  "quicksand";
-  --default-color: 
+  --default-color: #B9B9D1;
+  --accent-color: #f89ac0;
 }
-
-
 
 body {
   background: #ffff;
-  color: #B9B9D1;
+  color: var(--default-color);
   font-family: var(--default-font);
 }
 
@@ -17,28 +16,28 @@ body {
 }
 
 .navbar.navbar-expand-lg.navbar-light li a:hover {
-  color: #f89ac0;
+  color: var(--accent-color);
 }
 
 
 .navbar-brand {
-  color: #B9B9D1 !important;
+  color: var(--default-color) !important;
 }
 
 h1 {
   font-family: var(--heading-font);
   font-size: 64px;
-  color: #f89ac0;
+  color: var(--accent-color);
 }
 
 .hero {
-  background-color: #ede3e7;
+  background: #ede3e7;
   color: #ffff;
   margin: 0;
 }
 
 .btn-branding {
-  background: #f89ac0;
+  background: var(--accent-color);
   color: white;
   border-radius: 4px;
   font-size: 18px;
@@ -50,6 +49,7 @@ h1 {
 .btn-branding:hover {
   color: #ffff;
   background: #f2c4d8;
+  cursor: pointer;
 }
 
 #project-head {
@@ -65,13 +65,13 @@ h1 {
 
 .timestamp {
   opacity: 40%;
-  color: #f89ac0;
+  color: var(--accent-color);
 }
 
 .btn-branding-outline {
   color: #ffff;
-  background: #B9B9D1;
-  border: 1px solid #B9B9D1;
+  background: var(--default-color);
+  border: 1px solid var(--default-color);
   border-radius: 4px;
   font-size: 18px;
   font-weight: 900;
@@ -83,15 +83,16 @@ h1 {
   background: #ede3e7;
   color: #ffff;
   border: #ede3e7;
+  cursor: pointer;
 }
 
 .fas {
-  color: #f89ac0;
+  color: var(--accent-color);
   margin-left: 10px;
 }
 
 .fab {
-  color: #f89ac0;
+  color: var(--accent-color);
   display: inline-block;
 }
 
@@ -108,9 +109,20 @@ h1 {
   font-size: 20px;
 }
 
+.aboutMeHeading {
+  text-align: center;
+  font-family: var(--heading-font);
+  color: var(--accent-color);
+}
+
 i {
   transition: all 100ms ease-in-out;
 }
+
+.far {
+  color: var(--accent-color);
+}
+
 
 i:hover {
   color: #ede3e7;
@@ -122,4 +134,23 @@ i:hover {
 
 #social-icons {
   margin: 15px;
+}
+
+
+
+#hero-about img {
+  width: 350px;
+}
+
+#selfie-one {
+  float: right;
+}
+
+.fa-arrow-down {
+  color: #ffff;
+}
+
+.fa-arrow-down:hover {
+  color: #f2c4d8;
+  cursor: pointer;
 }
