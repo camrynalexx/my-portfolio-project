@@ -1,7 +1,7 @@
 :root {
-  --heading-font:  "Anton", "sans-serif";
-  --default-font:  "quicksand";
-  --default-color: #B9B9D1;
+  --heading-font: "Anton", "sans-serif";
+  --default-font: "quicksand";
+  --default-color: #b9b9d1;
   --accent-color: #f89ac0;
 }
 
@@ -19,21 +19,41 @@ body {
   color: var(--accent-color);
 }
 
-
 .navbar-brand {
   color: var(--default-color) !important;
 }
 
-h1 {
-  font-family: var(--heading-font);
-  font-size: 64px;
-  color: var(--accent-color);
+#about-nav {
+  opacity: 80%;
+}
+
+.about-hero .navbar.navbar-expand-lg.navbar-light li a {
+  color: #85B88A;
+}
+
+.about-hero .navbar-brand {
+  color: #D40206 !important;
 }
 
 .hero {
   background: #ede3e7;
   color: #ffff;
   margin: 0;
+}
+
+.about-hero {
+  background-image: url(/images/background.png);
+}
+
+h1 {
+  font-family: var(--heading-font);
+  font-size: 64px;
+  color: var(--accent-color);
+  margin-left: 15px;
+}
+
+.hero p {
+  margin-left: 15px;
 }
 
 .btn-branding {
@@ -52,9 +72,20 @@ h1 {
   cursor: pointer;
 }
 
+#heart-accent {
+  color: #f89ac0;
+  opacity: 50%;
+}
+
 #project-head {
   font-family: var(--heading-font);
   font-size: 50px;
+}
+
+#selfie-main-edit {
+  margin: 15px 0 20px 30px;
+  border: 15px double #f3f4f5;
+  width: 345px;
 }
 
 .project-description p {
@@ -91,11 +122,6 @@ h1 {
   margin-left: 10px;
 }
 
-.fab {
-  color: var(--accent-color);
-  display: inline-block;
-}
-
 .api-icon {
   background: white;
   border: white;
@@ -105,14 +131,11 @@ h1 {
   opacity: 30%;
 }
 
-.icon-text {
-  font-size: 20px;
-}
-
 .aboutMeHeading {
   text-align: center;
   font-family: var(--heading-font);
-  color: var(--accent-color);
+  color: #ffff;
+  padding: 15px;
 }
 
 i {
@@ -123,20 +146,28 @@ i {
   color: var(--accent-color);
 }
 
-
-i:hover {
-  color: #ede3e7;
-}
-
 #icon-section a {
   text-decoration: none;
 }
 
 #social-icons {
-  margin: 15px;
+  display: inline-block;
+  color: #ffff;
+  font-size: 25px;
+  margin: 10px;
+  padding: 15px;
+  background: var(--accent-color);
+  opacity: 40%;
+  border: 1px solid var(--accent-color);
+  border-radius: 50%;
+  transition: all 100ms ease-in-out;
 }
 
-
+#social-icons:hover {
+  color: #b9b9d1;
+  background: #ede3e7;
+  border: #ede3e7;
+}
 
 #hero-about img {
   width: 350px;
@@ -144,6 +175,11 @@ i:hover {
 
 #selfie-one {
   float: right;
+  border: 15px dotted #ffff;
+}
+
+#selfie-two {
+  border: 15px dotted #ffff;
 }
 
 .fa-arrow-down {
@@ -151,6 +187,6 @@ i:hover {
 }
 
 .fa-arrow-down:hover {
-  color: #f2c4d8;
+  color: #D40206;
   cursor: pointer;
 }

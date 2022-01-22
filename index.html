@@ -31,6 +31,8 @@
     <title>Camryn Lee's Portfolio</title>
   </head>
   <body>
+
+    <div class="hero">
     <nav
       class="navbar navbar-expand-lg navbar-light"
       style="background-color: #ede3e7"
@@ -69,30 +71,35 @@
       </div>
     </nav>
 
-    <div class="hero">
-      <div class="row align-items-center" id="hero-images">
-        <div class="col-lg-4">
+    
+      <div class="row align-items-center">
+        <div class="col-md-3">
           <img
-            src="/images/selfie.png"
+            src="/images/selfiemain.png"
             alt=""
-            class="img-fluid rounded-circle p-4"
+            class="img-fluid rounded-circle"
+            id="selfie-main-edit"
           />
         </div>
-        <div class="col-lg-8">
-          <h3>Hello ♡ I am</h3>
+        <div class="col-md-9">
+          <h2>
+            <strong> Hello ♡ I am </strong>
+          </h2>
           <h1>Camryn Lee</h1>
           <p class="mb-5">
-            Budding front-end developer based in Northern California
+            <strong>
+              Budding front-end developer based in Northern California
+            </strong>
           </p>
           <a href="/index.html#projects" class="btn btn-branding">
-            Check out my work :)
+            CHECK OUT MY WORK :)
           </a>
         </div>
       </div>
     </div>
 
     <div class="container" id="projects">
-      <h2 class="text-center m-5">♡ ♡ ♡ ♡ ♡</h2>
+      <h2 class="text-center m-5" id="heart-accent">♡ ♡ ♡ ♡ ♡ ♡ ♡</h2>
       <hr />
       <div class="row align-items-center mb-5">
         <div class="col-6">
@@ -112,7 +119,7 @@
               <i class="fab fa-js-square"></i>
             </p>
             <a href="" class="btn btn-branding-outline" target="_blank">
-              Learn more
+                LEARN MORE
             </a>
           </div>
         </div>
@@ -123,7 +130,8 @@
           <div class="project-description">
             <h2 class="mb-5" id="project-head">Weather App</h2>
             <p class="mb-5">
-             Building this weather app was a really fun experience and allowed me the first chance to showcase my javascript skills.
+              Building this weather app was a really fun experience and allowed
+              me the first chance to showcase my javascript skills.
             </p>
             <p class="timestamp">
               Created in 2021 using
@@ -168,7 +176,7 @@
               </button>
             </p>
             <a href="" class="btn btn-branding-outline" target="_blank">
-              Learn more
+              LEARN MORE
             </a>
           </div>
         </div>
@@ -179,21 +187,16 @@
       <hr />
 
       <footer>
+        <h2 class="text-center" id="heart-accent">♡ ♡ ♡ ♡ ♡ ♡ ♡</h2>
         <div class="text-center" id="icon-section">
           <a href="https://github.com/camrynalexx" target="_blank">
-            <i class="fab fa-github-alt fa-3x pb-2" id="social-icons">
-              <hr />
-              <div class="icon-text">GITHUB</div>
-            </i>
+            <i class="fab fa-github-alt" id="social-icons"> </i>
           </a>
           <a
             href="https://www.linkedin.com/in/camryn-lee-93a25021b/"
             target="_blank"
           >
-            <i class="fab fa-linkedin fa-3x pb-2" id="social-icons">
-              <hr />
-              <div class="icon-text">LINKEDIN</div>
-            </i>
+            <i class="fab fa-linkedin" id="social-icons"> </i>
           </a>
         </div>
       </footer>
