@@ -1,8 +1,10 @@
 :root {
   --heading-font: "Anton", "sans-serif";
-  --default-font: "quicksand";
+  --default-font: "quicksand", "sans-serif";
   --default-color: #b9b9d1;
   --accent-color: #f89ac0;
+  --btn-branding-font: "Bebas Neue", "cursive";
+  --hero-background-color: #ede3e7;
 }
 
 body {
@@ -23,47 +25,106 @@ body {
   color: var(--default-color) !important;
 }
 
-#about-nav {
-  opacity: 80%;
-}
-
-.about-hero .navbar.navbar-expand-lg.navbar-light li a {
-  color: #85B88A;
-}
-
-.about-hero .navbar-brand {
-  color: #D40206 !important;
-}
 
 .hero {
-  background: #ede3e7;
+  background: var(--hero-background-color);
   color: #ffff;
   margin: 0;
 }
 
-.about-hero {
-  background-image: url(/images/background.png);
-}
-
-h1 {
+#home-intro h1 {
   font-family: var(--heading-font);
   font-size: 64px;
   color: var(--accent-color);
   margin-left: 15px;
+}
+ #home-intro h3 {
+   display: inline-block;
+   margin: 0 10px 0 10px;
+   font-family: var(--btn-branding-font);
+   color: var(--accent-color);
+   opacity: 80%;
+ }
+
+ #home-intro a {
+   font-family: var(--btn-branding-font);
+ }
+
+ #about-card {
+   background: var(--hero-background-color);
+   border-color:var(--hero-background-color) !important;
+   
+ }
+
+#about-content h2 {
+  font-family: var(--default-font);
+  font-size: 40px;
+  font-weight: 600;
+}
+
+#about-first-name {
+  color: var(--accent-color);
+  font-family: var(--heading-font) !important;
+}
+
+#about-content .description {
+  line-height: 2.5;
+}
+
+#about-content h3 {
+  font-family: var(--btn-branding-font);
+  font-size: 25px;
+  opacity: 80%;
+}
+
+.about-note {
+  font-family: var(--btn-branding-font);
+  font-size: 15px;
+  opacity: 80%;
+}
+
+#about-skills .col {
+  color: var(--accent-color);
+  margin: 0 0 35px 15px;
+  transition: all 100ms ease-in-out;
+}
+
+#about-skills .col:hover {
+  opacity: 60%;
 }
 
 .hero p {
   margin-left: 15px;
 }
 
+#about-content footer {
+  padding: 10px 0 10px 0;
+  margin: 0 150px 0 ;
+}
+
+#about-content .btn-branding {
+  padding: 8px;
+  font-size: 12px;
+  font-family: var(--btn-branding-font);
+  background: var(--default-color);
+  opacity: 80%;
+}
+
+#about-content .btn-branding:hover {
+  background: var(--default-color);
+  opacity: 60%;
+}
+
+
 .btn-branding {
   background: var(--accent-color);
   color: white;
   border-radius: 4px;
-  font-size: 18px;
+  font-size: 25px;
   font-weight: 900;
   line-height: 27px;
   padding: 15px 30px;
+  opacity: 70%;
 }
 
 .btn-branding:hover {
@@ -72,14 +133,18 @@ h1 {
   cursor: pointer;
 }
 
-#heart-accent {
-  color: #f89ac0;
+#emoji-accent {
+  color: var(--accent-color);
   opacity: 50%;
 }
 
-#project-head {
+#project-heading {
   font-family: var(--heading-font);
   font-size: 50px;
+}
+
+#projects a {
+  font-family: var(--btn-branding-font);
 }
 
 #selfie-main-edit {
@@ -104,10 +169,11 @@ h1 {
   background: var(--default-color);
   border: 1px solid var(--default-color);
   border-radius: 4px;
-  font-size: 18px;
+  font-size: 25px;
   font-weight: 900;
   line-height: 27px;
   padding: 15px 30px;
+  opacity: 70%;
 }
 
 .btn-branding-outline:hover {
@@ -131,16 +197,31 @@ h1 {
   opacity: 30%;
 }
 
+.about-api-icon {
+  background: white;
+  border: white;
+}
+
+.about-api-icon:hover {
+  opacity: 30%;
+}
+
 .aboutMeHeading {
   text-align: center;
   font-family: var(--heading-font);
-  color: #ffff;
+  color: var(--accent-color);
+  opacity: 80%;
   padding: 15px;
 }
 
-i {
+.timestamp i {
   transition: all 100ms ease-in-out;
 }
+
+.timestamp i:hover {
+  opacity: 60%;
+}
+
 
 .far {
   color: var(--accent-color);
@@ -154,7 +235,7 @@ i {
   display: inline-block;
   color: #ffff;
   font-size: 25px;
-  margin: 10px;
+  margin: 0 10px 0 10px;
   padding: 15px;
   background: var(--accent-color);
   opacity: 40%;
@@ -164,22 +245,27 @@ i {
 }
 
 #social-icons:hover {
-  color: #b9b9d1;
-  background: #ede3e7;
-  border: #ede3e7;
+  color: #ffff;
+  background: var(--hero-background-color);
+  border: var(--hero-background-color);
+  opacity: 100%;
 }
 
-#hero-about img {
+#about-hero img {
   width: 350px;
 }
 
 #selfie-one {
   float: right;
-  border: 15px dotted #ffff;
+  border: 15px double #ffff;
+  width: 250px;
+  
 }
 
 #selfie-two {
-  border: 15px dotted #ffff;
+  float: left;
+  border: 15px double #ffff;
+  width: 250px;
 }
 
 .fa-arrow-down {
@@ -187,6 +273,7 @@ i {
 }
 
 .fa-arrow-down:hover {
-  color: #D40206;
+  color: var(--default-color);
   cursor: pointer;
+  opacity: 80%;
 }
