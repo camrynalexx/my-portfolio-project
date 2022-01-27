@@ -5,7 +5,7 @@
   --accent-color: #f89ac0;
   --btn-branding-font: "Staatliches", "cursive";
   --hero-background-color: #ede3e7;
-  --about-background-color: #fcd77b;
+  --about-background-color: #FDDB89;
 }
 
 body {
@@ -77,16 +77,18 @@ body {
   opacity: 50%;
 }
 
-#projects h1 {
+#home-projects h1 {
   font-family: var(--heading-font);
   color: var(--default-color);
-  font-size: 60px;
+  font-size: 50px;
   opacity: 80%;
 }
 
 
 #featured-images {
   border: 15px double var(--default-color);
+  width: 550px;
+  height: 500px;
 }
 
 .btn-branding-outline {
@@ -111,7 +113,7 @@ body {
    font-family: var(--btn-branding-font);
  }
 
- #projects a {
+ #home-projects a {
    font-family: var(--btn-branding-font);
  }
 
@@ -125,7 +127,7 @@ body {
 }
 
 #about-card {
-   background: var(--about-background-color);
+   background: #FDDB89;
    border: var(--about-background-color) !important;
    padding: 35px;
  }
@@ -281,47 +283,56 @@ hr {
   color: var(--accent-color);
 }
 
+
 .project-container {
-  display: flex;
+  margin: 0 auto;
   position: relative;
-  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1px;
 }
 
-.project-card{
-  border: 15px double var(--default-color);
+
+.project-card {
+  width: 550px;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  border: 8px solid var(--default-color) !important;
   margin: 20px;
 }
 
-.project-image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
 
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #ffff;
-  overflow: hidden;
-  width: 0;
+.project-content {
+  width: 100%;
   height: 100%;
-  transition: 0.5s ease;
 }
 
-.project-card:hover .overlay {
+.project-content .project-image {
   width: 100%;
+  height: 100%;
+  border: 1px #ffff !important;
 }
 
-.project-text {
-  color: var(--default-color);
-  font-size: 20px;
+.overlay-content {
+  font-family: var(--heading-font);
+  width: 100%;
+  height: 100%;
+  background-color: #ffff;
+  color: var(--accent-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  white-space: nowrap;
+  z-index: 1;
+  transition: 0.5s;
+  top: 0%;
+  left: 100%;
+}
+
+.project-card:hover .overlay-content {
+  left: 0;
 }
