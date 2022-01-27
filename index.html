@@ -21,7 +21,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Quicksand&family=Shadows+Into+Light&family=Staatliches&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/src/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -31,7 +31,7 @@
 
     <div class="hero">
     <nav
-      class="navbar navbar-expand-lg navbar-light"
+      class="navbar navbar-expand-lg navbar-light shadow"
       style="background-color: #ede3e7"
     >
       <div class="container-fluid">
@@ -58,10 +58,10 @@
               <a class="nav-link" href="/about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="/projects.html">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact </a>
+              <a class="nav-link" href="/contact.html">Contact </a>
             </li>
           </ul>
         </div>
@@ -102,97 +102,49 @@
     </div>
 
     <div class="container" id="projects">
-      <h2 class="text-center m-5" id="emoji-accent">♡ ♡ ♡ ♡ ♡ ♡ ♡</h2>
+      <h2 class="text-center mt-5 mb-3" id="emoji-accent">♡ ♡ ♡ ♡ ♡ ♡ ♡</h2>
       <hr />
       <div class="row align-items-center mb-5">
         <div class="col-6">
-          <img src="/images/deathnote.png" class="img-fluid rounded" />
+          <img src="/images/deathnote.png" alt="" class="img-fluid shadow rounded" id="featured-images" />
         </div>
-        <div class="col-6">
-          <div class="project-description">
-            <h2 class="mb-5" id="project-heading">Landing project</h2>
-            <p class="mb-5">
-              The very first project handcrafted by me ☻. I decided to create a
-              page about the best anime ever created, Death Note.
-            </p>
-            <p class="timestamp">
-              Created in 2021 using
-              <i class="fas fa-code"></i>
-              <i class="fab fa-css3-alt"></i>
-              <i class="fab fa-js-square"></i>
-            </p>
+        <div class="col-6 text-center">
+          <h1 class="pb-4">Landing Project</h1>
             <a href="" class="btn btn-branding-outline" target="_blank">
                 LEARN MORE
             </a>
           </div>
         </div>
-      </div>
 
-      <div class="row align-items-center">
-        <div class="col-6">
-          <div class="project-description">
-            <h2 class="mb-5" id="project-heading">Weather App</h2>
-            <p class="mb-5">
-              Building this weather app was a really fun experience and allowed
-              me the first chance to showcase my javascript skills.
-            </p>
-            <p class="timestamp">
-              Created in 2021 using
-              <i class="fas fa-code"></i>
-              <i class="fab fa-css3-alt"></i>
-              <i class="fab fa-js-square"></i>
-
-             
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  x="0px"
-                  y="0px"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 172 172"
-                  class="api-icon"
-                  style="fill: #000000"
-                >
-                  <g
-                    fill="none"
-                    fill-rule="nonzero"
-                    stroke="none"
-                    stroke-width="1"
-                    stroke-linecap="butt"
-                    stroke-linejoin="miter"
-                    stroke-miterlimit="10"
-                    stroke-dasharray=""
-                    stroke-dashoffset="0"
-                    font-family="none"
-                    font-weight="none"
-                    font-size="none"
-                    text-anchor="none"
-                    style="mix-blend-mode: normal"
-                  >
-                    <path d="M0,172v-172h172v172z" fill="none"></path>
-                    <g fill="#f89ac0">
-                      <path
-                        d="M69.28711,14.33333l-3.52734,18.08464c-5.934,2.236 -11.34584,5.34678 -16.08301,9.23828l-17.37077,-5.97689l-16.72689,28.97461l13.89941,12.09375c-0.55183,3.3755 -0.81185,6.39995 -0.81185,9.25228c0,2.83083 0.26718,5.86211 0.81185,9.26628l-13.89941,12.09375l16.72689,28.96061l17.35677,-5.97689c4.7515,3.89867 10.17017,7.01628 16.097,9.25228l3.52734,18.07064h9.54622v-25.93718l-0.5319,-2.72949l-7.47461,-2.82747c-4.46483,-1.68417 -8.51825,-4.00505 -12.06575,-6.91472l-6.18685,-5.08105l-13.77344,4.74511l-4.89909,-8.51042l11.00195,-9.57422l-1.27376,-7.85254c-0.42283,-2.63017 -0.62988,-4.9207 -0.62988,-6.9847c0,-2.07833 0.20705,-4.35487 0.62988,-6.9707l1.27376,-7.86654l-11.01595,-9.57422l4.91309,-8.51042l13.75944,4.74512l6.20085,-5.08105c3.53317,-2.90967 7.60775,-5.23055 12.07975,-6.91471l7.46061,-2.82747l2.79948,-14.33333h9.81218l2.78548,14.33333l7.47461,2.82747c4.46483,1.68417 8.53225,4.00505 12.07975,6.91471l6.18685,5.08105l13.75944,-4.74512l4.91308,8.51042l-11.00195,9.56022l1.25976,7.86654v0.02799c0.42283,2.60867 0.62989,4.87837 0.62989,6.9567c0,2.07833 -0.20705,4.35487 -0.62989,6.9707l-1.27376,7.86653l7.65657,6.66276h21.58399l0.08399,-0.15397l-13.89941,-12.09375c0.54467,-3.3755 0.81185,-6.39995 0.81185,-9.25228c0,-2.85233 -0.26001,-5.88361 -0.81185,-9.26628l13.89941,-12.09375l-16.72689,-28.96061l-17.35678,5.97689c-4.7515,-3.89867 -10.17017,-7.01628 -16.097,-9.25228l-3.52735,-18.07064zM86,57.33333c-15.74175,0 -28.66667,12.92492 -28.66667,28.66667c0,15.74175 12.92492,28.66667 28.66667,28.66667c15.74175,0 28.66667,-12.92492 28.66667,-28.66667c0,-15.74175 -12.92492,-28.66667 -28.66667,-28.66667zM86,71.66667c7.96559,0 14.33333,6.36775 14.33333,14.33333c0,7.96559 -6.36775,14.33333 -14.33333,14.33333c-7.96559,0 -14.33333,-6.36775 -14.33333,-14.33333c0,-7.96559 6.36775,-14.33333 14.33333,-14.33333zM102.81087,121.83333l-9.6442,35.83333h7.54459l1.84766,-7.16667h9.79817l1.86166,7.16667h7.61458l-9.7002,-35.83333zM129,121.83333v35.83333h7.16667v-14.33333h3.58333c5.934,0 10.75,-4.816 10.75,-10.75c0,-5.934 -4.816,-10.75 -10.75,-10.75zM157.66667,121.83333v35.83333h7.16667v-35.83333zM136.16667,129h3.58333c1.978,0 3.58333,1.60533 3.58333,3.58333c0,1.978 -1.60533,3.58333 -3.58333,3.58333h-3.58333zM107.44401,131.53353l3.06543,11.7998h-6.10287z"
-                      ></path>
-                    </g>
-                  </g>
-                </svg>
-                
-            </p>
+      <div class="row align-items-center mb-5">
+        <div class="col-6 text-center">
+          <h1 class="pb-4">Weather Project</h1>
             <a href="" class="btn btn-branding-outline" target="_blank">
               LEARN MORE
             </a>
           </div>
-        </div>
         <div class="col-6">
-          <img src="/images/weatherapp.png" class="img-fluid rounded" />
+          <img src="/images/weatherapp.png" class="img-fluid shadow rounded" id="featured-images" />
         </div>
       </div>
+
+      <div class="row align-items-center">
+        <div class="col-6">
+          <img src="/images/portfolioproject.png" alt="" class="img-fluid shadow rounded" id="featured-images">
+        </div>
+        <div class="col-6 text-center">
+          <h1 class="pb-4"> Portfolio Project</h1>
+          <a href="" class="btn btn-branding-outline" target="_blank">
+            LEARN MORE
+          </a>
+        </div>
+      </div>
+
       <hr />
 
       <footer>
-        <h2 class="text-center m-5" id="emoji-accent">♡ ♡ ♡ ♡ ♡ ♡ ♡</h2>
-        <div class="text-center" id="icon-section">
+        <h2 class="text-center mb-3" id="emoji-accent">♡ ♡ ♡ ♡ ♡ ♡ ♡</h2>
+        <div class="text-center mb-3" id="icon-section">
           <a href="https://github.com/camrynalexx" target="_blank">
             <i class="fab fa-github-alt" id="social-icons"> </i>
           </a>
