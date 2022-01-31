@@ -21,18 +21,19 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Quicksand&family=Shadows+Into+Light&family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Courier+Prime:wght@700&family=Quicksand&family=Shadows+Into+Light&family=Staatliches&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/src/style.css" />
+    <script src="/src/app.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camryn Lee's Projects</title>
 </head>
-<body>
+<body class="project-body">
 
   <div class="about-hero">
       <nav
         class="navbar navbar-expand-lg navbar-light shadow"
-        style="background-color: #ffff"
+        style="background-color: #FFEDF0"
       >
         <div class="container-fluid">
           <a class="navbar-brand" href="/">Camryn Lee</a>
@@ -51,7 +52,7 @@
             <ul class="navbar-nav">
               <li class="nav-item active">
                 <a class="nav-link" href="/"
-                  >Home <span class="sr-only">(current)</span></a
+                  >Home <span class="sr-only"></span></a
                 >
               </li>
               <li class="nav-item">
@@ -70,12 +71,22 @@
       </div>
       
       <h3 class="text-center mt-5 mb-3" id="emoji-accent">♡ ♡ ♡ ♡ ♡ ♡ ♡</h3>
-      <hr  />
-      <h2 class="text-center mt-5">
-        WHAT I'VE DONE SO FAR
-      </h2>
+      <hr class="m-5"/>
+      
     
     <div class="project-container">
+      <div class="row">
+       <div class="col-6">
+         <div class="css-typing">
+          <h1>
+            <a href="" class="typewrite" data-period="2000" data-type='[ "HELLO.", "How are you?", "Take a look at my work!"]'>
+            <span class="wrap"></span>
+            </a>
+          </h1>
+         </div>
+        </div>
+
+      <div class="col-6">
       <div class="p-2">
         <div class="project-card border shadow rounded">
           <div class="project-content">
@@ -83,7 +94,7 @@
           </div>
           <div class="overlay-content">
           <div class="overlay-text text-center">
-            <h1 class="mt-2 mb-2">
+            <h1 class="mb-2">
               Landing Project
             </h1>
             <p>
@@ -98,53 +109,106 @@
               <strong>
                 Built with HTML, CSS, and JS
               </strong>
-              </p>
-                  <a href="https://affectionate-snyder-238830.netlify.app" class="project-links">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                      width="30" height="30"
-                        viewBox="0 0 172 172"
-                      style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M118.68,142.76h-68.8c-11.39844,0 -20.64,-9.24156 -20.64,-20.64v-68.8c0,-11.39844 9.24156,-20.64 20.64,-20.64h68.8c11.39844,0 20.64,9.24156 20.64,20.64v68.8c0,11.39844 -9.24156,20.64 -20.64,20.64z" fill="#fddb89"></path><path d="M127.28,21.5c-1.42416,0 -2.58,1.15584 -2.58,2.58c0,1.42416 1.15584,2.58 2.58,2.58h14.4308l-52.35508,52.35508c-1.0062,1.0062 -1.00792,2.63676 -0.00344,3.64468l0.00516,0.00516c1.00792,1.01136 2.64364,1.01308 3.65328,0.00344l52.32928,-52.36196v14.4136c0,1.42416 1.15584,2.58 2.58,2.58c1.42416,0 2.58,-1.15584 2.58,-2.58v-23.22z" fill="#fefdef"></path><path d="M118.68,142.76h-68.8c-11.38124,0 -20.64,-9.25876 -20.64,-20.64v-68.8c0,-11.38124 9.25876,-20.64 20.64,-20.64h68.8c1.97112,0 3.92504,0.27864 5.805,0.82732c0.90988,0.2666 1.43448,1.22292 1.16788,2.13452c-0.2666,0.90988 -1.20744,1.43276 -2.13452,1.16788c-1.5652,-0.45752 -3.19232,-0.68972 -4.83836,-0.68972h-68.8c-9.48408,0 -17.2,7.71592 -17.2,17.2v68.8c0,9.48408 7.71592,17.2 17.2,17.2h68.8c9.48408,0 17.2,-7.71592 17.2,-17.2v-68.8c0,-1.58928 -0.215,-3.15964 -0.64156,-4.66808c-0.25628,-0.91332 0.2752,-1.86448 1.18852,-2.12248c0.91676,-0.25284 1.86448,0.27692 2.12248,1.18852c0.51256,1.81288 0.77056,3.698 0.77056,5.60204v68.8c0,11.38124 -9.25876,20.64 -20.64,20.64z" fill="#1f212b"></path><path d="M91.1858,84.28516c-0.00172,0 -0.00172,0 -0.00344,0c-0.9202,-0.00172 -1.78536,-0.3612 -2.4338,-1.01308c-1.3416,-1.34848 -1.33816,-3.52772 0,-4.86416l50.8862,-50.88792h-12.35476c-1.89716,0 -3.44,-1.54284 -3.44,-3.44c0,-1.89716 1.54284,-3.44 3.44,-3.44h23.22c0.47472,0 0.86,0.38528 0.86,0.86v23.22c0,1.89716 -1.54284,3.44 -3.44,3.44c-1.89716,0 -3.44,-1.54284 -3.44,-3.44v-12.33584l-50.8604,50.89308c-0.65016,0.65016 -1.5136,1.00792 -2.4338,1.00792zM127.28,22.36c-0.94944,0 -1.72,0.77056 -1.72,1.72c0,0.94944 0.77056,1.72 1.72,1.72h14.4308c0.34744,0 0.6622,0.20984 0.79464,0.53148c0.13244,0.32164 0.05848,0.69144 -0.18576,0.9374l-52.35508,52.35508c-0.6708,0.66908 -0.6708,1.75784 -0.00344,2.42864c0.33024,0.33196 0.76196,0.51256 1.22292,0.51256h0.00172c0.46096,0 0.89268,-0.17888 1.21776,-0.50396l52.32928,-52.36196c0.24596,-0.24596 0.61576,-0.3182 0.9374,-0.18576c0.31992,0.13072 0.52976,0.44548 0.52976,0.79292v14.4136c0,0.94944 0.77056,1.72 1.72,1.72c0.94944,0 1.72,-0.77056 1.72,-1.72v-22.36z" fill="#1f212b"></path><path d="M118.68,134.16h-68.8c-6.6392,0 -12.04,-5.40252 -12.04,-12.04v-68.8c0,-6.63748 5.4008,-12.04 12.04,-12.04h61.06c0.47472,0 0.86,0.38528 0.86,0.86c0,0.47472 -0.38528,0.86 -0.86,0.86h-61.06c-5.69148,0 -10.32,4.62852 -10.32,10.32v68.8c0,5.69148 4.62852,10.32 10.32,10.32h68.8c5.69148,0 10.32,-4.62852 10.32,-10.32v-30.96c0,-0.47472 0.38528,-0.86 0.86,-0.86c0.47472,0 0.86,0.38528 0.86,0.86v30.96c0,6.63748 -5.40252,12.04 -12.04,12.04zM129.86,86c-0.47472,0 -0.86,-0.38528 -0.86,-0.86v-6.88c0,-0.47472 0.38528,-0.86 0.86,-0.86c0.47472,0 0.86,0.38528 0.86,0.86v6.88c0,0.47472 -0.38528,0.86 -0.86,0.86zM129.86,75.68c-0.47472,0 -0.86,-0.38528 -0.86,-0.86v-3.44c0,-0.47472 0.38528,-0.86 0.86,-0.86c0.47472,0 0.86,0.38528 0.86,0.86v3.44c0,0.47472 -0.38528,0.86 -0.86,0.86z" fill="#1f212b"></path></g></g></svg> 
+              <hr  />
+              <span>
+                 <a href="https://affectionate-snyder-238830.netlify.app" class="project-links">
+                    <img src="/images/external-link-icon.svg" alt="" class="link-icon">
                   </a>
                   <a href="https://github.com/camrynalexx/my-landing-project.git" class="project-links">
-                    <img src="/images/githubicon.svg" alt="" class="git-hub border rounded">
+                    <img src="/images/githubicon.svg" alt="" class="git-hub">
                   </a>
-            </footer>
+              </span>
+              </p>
+              </footer>   
           </div>
          </div>
         </div>
+       </div>
+      </div>
       </div>
 
+      <div class="row">
+        <div class="col-6">
       <div class="p-2">
         <div class="project-card border shadow rounded">
           <div class="project-content">
             <img src="/images/weatherapp.png" alt="" class="project-image img-fluid">
           </div>
           <div class="overlay-content">
-            <h1>
+            <div class="overlay-text text-center">
+            <h1 class="mt-2 mb-2">
               Weather Project
             </h1>
+            <p class="mb-4">
+              <strong>
+                This is the weather application that I created for SheCodes Plus. I used the OpenWeatherMap API
+                and their code to build a program that shows you a city's temperature, weather description, humidity, and windspeed !
+              </strong>
+            </p>
+            <footer>
+              <p class="m-0">
+              <strong>
+                Built with HTML, CSS, JS, and Bootstrap
+              </strong>
+              <hr />
+              <span>
+                 <a href="https://affectionate-snyder-238830.netlify.app" class="project-links">
+                    <img src="/images/external-link-icon.svg" alt="" class="link-icon">
+                  </a>
+                  <a href="https://github.com/camrynalexx/my-landing-project.git" class="project-links">
+                    <img src="/images/githubicon.svg" alt="" class="git-hub">
+                  </a>
+              </span>
+              </p>
+              </footer>
+          </div>
           </div>
         </div>
         </div>
+        </div>
 
+        <div class="col-6 mb-3">
         <div class="p-2">
           <div class="project-card border shadow rounded">
           <div class="project-content">
             <img src="/images/portfolioproject.png" alt="" class="project-image img-fluid">
           </div>
           <div class="overlay-content">
-            <h1>
+           <div class="overlay-text text-center">
+            <h1 class="mt-2 mb-2">
               Portfolio Project
             </h1>
-          
+            <p>
+              <strong>
+                This is my Portfolio project that I coded for SheCodes Responsive. This was my
+                first time creating a Responsive webpage and my first time using SEO. 
+              </strong>
+            </p>
+            <footer>
+              <p class="m-0">
+              <strong>
+                Built with HTML, CSS, and JS
+              </strong>
+              <hr  />
+              <span>
+                 <a href="https://affectionate-snyder-238830.netlify.app" class="project-links">
+                    <img src="/images/external-link-icon.svg" alt="" class="link-icon">
+                  </a>
+                  <a href="https://github.com/camrynalexx/my-landing-project.git" class="project-links">
+                    <img src="/images/githubicon.svg" alt="" class="git-hub">
+                  </a>
+              </span>
+              </p>
+              </footer>
+           </div>
           </div>
          </div>
         </div>
         </div>
-
-        <hr  />
-
-        <footer>
+        </div>
+    </div>
+    <hr class="m-5" />
+    <footer>
         <h3 class="text-center mb-3" id="emoji-accent">♡ ♡ ♡ ♡ ♡ ♡ ♡</h3>
         <div class="text-center mb-3" id="icon-section">
           <a href="https://github.com/camrynalexx" target="_blank">
@@ -158,17 +222,8 @@
           </a>
         </div>
       </footer>
-
  
-      
-
-
-
-      
-
   
-      
-
       
     
     
