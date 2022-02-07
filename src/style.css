@@ -8,11 +8,16 @@
   --about-background-color: #fadb5e;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: #ffff;
   color: var(--default-color);
   font-family: var(--default-font);
 }
+
 
 .navbar.navbar-expand-lg.navbar-light li a {
   color: #ffff;
@@ -33,9 +38,8 @@ body {
 }
 
 #selfie-main-edit {
-  margin: 15px 0 20px 30px;
+  display: flex;
   border: 15px double #ffff;
-  width: 345px;
 }
 
 #home-intro h1 {
@@ -53,12 +57,14 @@ body {
   opacity: 80%;
 }
 
-.hero p {
+#home-intro p {
   margin-left: 15px;
 }
 
-.hero .btn-branding {
+
+#home-intro .btn-branding {
   background: #ffff;
+  font-family: var(--btn-branding-font);
   color: var(--accent-color);
   border-radius: 4px;
   border: 4px double;
@@ -69,51 +75,66 @@ body {
   opacity: 70%;
 }
 
-.hero .btn-branding:hover {
+#home-intro .btn-branding:hover {
   color: #ffff;
   background: var(--accent-color);
   cursor: pointer;
   opacity: 50%;
 }
 
-#home-projects h1 {
-  font-family: var(--heading-font);
-  color: var(--default-color);
-  font-size: 50px;
-  opacity: 80%;
+.container-fluid {
+  margin: auto;
 }
 
-#featured-images {
-  border: 15px double var(--default-color);
-  width: 550px;
-  height: 500px;
-}
-
-.btn-branding-outline {
+.typewrite {
+  font-family: "Courier Prime";
+  text-decoration: none;
   color: var(--accent-color);
-  background: #ffff;
-  border: 4px double;
-  border-radius: 4px;
-  font-size: 25px;
-  font-weight: 900;
-  line-height: 27px;
-  padding: 15px 20px;
-  opacity: 70%;
 }
 
-.btn-branding-outline:hover {
-  color: var(--accent-color);
-  opacity: 50%;
-  cursor: pointer;
+.project-card {
+  width: 350px;
+  height: 350px;
+  position: relative;
+  overflow: hidden; 
 }
 
-#home-intro a {
-  font-family: var(--btn-branding-font);
+.project-card .project-content {
+  width: 100%;
+  height: 100%;
 }
 
-#home-projects a {
-  font-family: var(--btn-branding-font);
+.project-content img {
+  width: 100%;
+  height: 100%;
 }
+
+.project-card .overlay-content {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  transition: 0.5s;
+  top: 0;
+  left: 100%;
+}
+
+.project-card:hover .overlay-content {
+  transform: translateX(-100%)
+}
+.project-card .overlay-text {
+  display: block;
+}
+
+
+
 
 .about-hero .navbar.navbar-expand-lg.navbar-light li a {
   color: var(--accent-color);
@@ -278,85 +299,30 @@ hr {
 
 
 
-.project-container {
-  margin: 0 auto;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 1120px;
-}
+@media (max-width: 900px) {
+  #home-intro {
+    padding: 20px 0 20px;
+  }
 
-.project-card {
-  width: 450px;
-  height: 400px;
-  overflow: hidden;
-  position: relative;
-  border: 15px solid #FFEDF0 !important;
-  margin: 20px;
-}
 
-.project-content {
-  width: 100%;
-  height: 100%;
-}
+  #home-intro h1 {
+    font-size: 45px;
+    margin: 0;
+  }
 
-.project-content .project-image {
-  width: 100%;
-  height: 100%;
-}
+  #home-intro p {
+    margin-bottom: 20px !important;
+    margin-left: 0;
+  }
 
-.overlay-content {
-  font-family: var(--heading-font);
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  display: flex;
-  overflow: hidden;
-  position: absolute;
-  z-index: 1;
-  transition: 0.5s;
-  top: 0%;
-  left: 100%;
-}
+  #home-intro .btn-branding {
+    font-size: 20px;
+    padding: 10px 15px;
+  }
 
-.project-card:hover .overlay-content {
-  left: 0;
-}
 
-.overlay-content .overlay-text {
-  color: black;
-  font-family: var(--default-font);
-  font-size: 14px;
-  line-height: 2;
-  margin: 30px;
-}
 
-.overlay-text h1 {
-  font-family: var(--heading-font);
-}
 
-.overlay-text hr {
-  color: var(--about-background-color);
-}
+ 
 
-.project-links {
-  text-decoration: none;
-}
-
-.project-links:hover {
-  opacity: 80%;
-}
-
-.css-typing a {
-  font-family: "courier prime";
-  font-size: 32px;
-  text-align: center;
-  color: black;
-  text-decoration: none;
-}
-
-.css-typing h1 {
-  padding-top: 160px;
 }
