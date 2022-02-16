@@ -82,8 +82,9 @@ body {
   opacity: 50%;
 }
 
-.container-fluid {
+.container {
   margin: auto;
+  justify-content: center;
 }
 
 .typewrite {
@@ -132,6 +133,8 @@ body {
 .project-card .overlay-text {
   display: block;
 }
+
+
 
 
 
