@@ -98,7 +98,7 @@ body {
   height: 350px;
   position: relative;
   overflow: hidden; 
-  border: 6px solid black;
+  border: 6px double pink;
 }
 
 .project-card .project-content {
@@ -114,8 +114,8 @@ body {
 .project-card .overlay-content {
   width: 100%;
   height: 100%;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -142,12 +142,12 @@ body {
 
 .project-link {
   text-decoration: none;
-  border: 3px solid white !important;
-  background-color: white;
+  border: 2px solid  black !important;
+  background-color: black;
   font-weight: bolder;
   font-size: 17px;
   padding: 3px;
-  color: black;
+  color: var(--hero-background-color);
 }
 
 .project-link:hover {
@@ -155,7 +155,7 @@ body {
 }
 
 .project-link:visited {
-  color: black;
+  color: var(--hero-background-color);
 }
 
 .project-description {
@@ -169,6 +169,12 @@ body {
 
  .project-description p {
    line-height: 1.7;
+ }
+
+ .project-description h3 {
+   font-size: 18px;
+   font-weight: bolder;
+   color: var(--accent-color);
  }
 
  .project-description .link {
@@ -367,6 +373,14 @@ hr {
   }
 
 
+  .project-description {
+    padding-right: 0;
+    text-align: left !important;
+  }
+
+  .project-description h3 {
+    padding-bottom: 10px !important;
+  }
 
 
  
