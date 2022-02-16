@@ -98,6 +98,7 @@ body {
   height: 350px;
   position: relative;
   overflow: hidden; 
+  border: 6px solid black;
 }
 
 .project-card .project-content {
@@ -134,9 +135,51 @@ body {
   display: block;
 }
 
+.overlay-content h2 {
+  font-family: var(--btn-branding-font);
+  padding-top: 80px;
+}
 
+.project-link {
+  text-decoration: none;
+  border: 3px solid white !important;
+  background-color: white;
+  font-weight: bolder;
+  font-size: 17px;
+  padding: 3px;
+  color: black;
+}
 
+.project-link:hover {
+  opacity: 70%;
+}
 
+.project-link:visited {
+  color: black;
+}
+
+.project-description {
+  padding-right: 70px;
+  color: black;
+}
+
+ .project-description h1 {
+   font-family: var(--heading-font);
+ }
+
+ .project-description p {
+   line-height: 1.7;
+ }
+
+ .project-description .link {
+  text-decoration: none;
+  border: 3px solid black !important;
+  background-color: black;
+  font-weight: bolder;
+  font-size: 17px;
+  padding: 3px;
+  color: white;
+ }
 
 
 .about-hero .navbar.navbar-expand-lg.navbar-light li a {
