@@ -88,7 +88,7 @@ body {
 }
 
 .typewrite {
-  font-family: "Courier Prime";
+  font-family: "Roboto";
   text-decoration: none;
   color: var(--accent-color);
 }
