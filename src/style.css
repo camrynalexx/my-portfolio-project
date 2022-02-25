@@ -5,7 +5,7 @@
   --accent-color: #f89ac0;
   --btn-branding-font: "Staatliches", "cursive";
   --hero-background-color: #ede3e7;
-  --about-accent-color: #FCE079;
+  --about-accent-color: #fce079;
 }
 
 * {
@@ -17,7 +17,6 @@ body {
   color: var(--default-color);
   font-family: var(--default-font);
 }
-
 
 .navbar.navbar-expand-lg.navbar-light li a {
   color: #ffff;
@@ -61,7 +60,6 @@ body {
   margin-left: 15px;
 }
 
-
 #home-intro .btn-branding {
   background: #ffff;
   font-family: var(--btn-branding-font);
@@ -101,7 +99,7 @@ body {
   width: 350px;
   height: 350px;
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
   border: 6px double pink;
   margin: 0 auto;
 }
@@ -134,7 +132,7 @@ body {
 }
 
 .project-card:hover .overlay-content {
-  transform: translateX(-100%)
+  transform: translateX(-100%);
 }
 .project-card .overlay-text {
   display: block;
@@ -148,7 +146,7 @@ body {
 .project-link {
   text-decoration: none;
   border: 2px solid var(--accent-color) !important;
-  
+
   font-weight: bolder;
   font-family: var(--btn-branding-font);
   font-size: 17px;
@@ -168,21 +166,21 @@ body {
   color: black;
 }
 
- .project-description h1 {
-   font-family: var(--heading-font);
- }
+.project-description h1 {
+  font-family: var(--heading-font);
+}
 
- .project-description p {
-   line-height: 1.7;
- }
+.project-description p {
+  line-height: 1.7;
+}
 
- .project-description h3 {
-   font-size: 18px;
-   font-weight: bolder;
-   color: var(--accent-color);
- }
+.project-description h3 {
+  font-size: 18px;
+  font-weight: bolder;
+  color: var(--accent-color);
+}
 
- .project-description .link {
+.project-description .link {
   text-decoration: none;
   border: 3px solid var(--accent-color) !important;
   background-color: var(--accent-color);
@@ -191,12 +189,11 @@ body {
   font-size: 15px;
   padding: 4px;
   color: white;
- }
+}
 
- .project-description .link:visited {
-   color: white;
- }
-
+.project-description .link:visited {
+  color: white;
+}
 
 .about-hero .navbar.navbar-expand-lg.navbar-light li a {
   color: var(--accent-color);
@@ -326,7 +323,6 @@ body {
   color: var(--accent-color);
 }
 
-
 #about-content .btn-branding:hover {
   opacity: 50%;
 }
@@ -349,7 +345,6 @@ body {
 .about-api-icon:hover {
   opacity: 30%;
 }
-
 
 #icon-section a {
   text-decoration: none;
@@ -384,7 +379,6 @@ body {
   color: var(--accent-color);
   opacity: 65%;
 }
-
 
 hr {
   color: var(--accent-color);
@@ -452,16 +446,18 @@ hr {
   color: var(--accent-color);
 }
 
-
 @media (max-width: 900px) {
   #home-intro {
     padding: 20px 0 20px;
   }
 
-
   #home-intro h1 {
-    font-size: 45px;
-    margin: 0;
+    font-size: 100px;
+    text-align: left;
+  }
+
+  #home-intro h2 {
+    font-size: 100px;
   }
 
   #home-intro p {
@@ -474,7 +470,7 @@ hr {
     padding: 10px 15px;
   }
 
-  .project-description h3 {
+  .project-description h2 {
     padding-bottom: 10px !important;
   }
 
@@ -482,9 +478,8 @@ hr {
     text-align: left;
     line-height: 1.7;
   }
-  
+
   #about-card h2 {
     text-align: left;
   }
-
 }
