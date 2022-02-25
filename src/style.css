@@ -5,7 +5,7 @@
   --accent-color: #f89ac0;
   --btn-branding-font: "Staatliches", "cursive";
   --hero-background-color: #ede3e7;
-  --about-accent-color: #fadb5e;
+  --about-accent-color: #FCE079;
 }
 
 * {
@@ -88,7 +88,7 @@ body {
 }
 
 .typewrite {
-  font-family: "Roboto";
+  font-family: "oswald";
   text-decoration: none;
   color: var(--accent-color);
 }
@@ -288,6 +288,7 @@ body {
 
 #about-certifs h1 {
   font-family: var(--heading-font);
+  text-decoration: underline;
   color: var(--accent-color);
 }
 
@@ -361,7 +362,7 @@ body {
   margin: 0 10px 0 10px;
   padding: 15px;
   background: var(--accent-color);
-  opacity: 65%;
+  opacity: 85%;
   border: 1px solid var(--accent-color);
   border-radius: 50%;
   transition: all 100ms ease-in-out;
@@ -369,9 +370,7 @@ body {
 
 #social-icons:hover {
   color: #ffff;
-  background: var(--hero-background-color);
-  border: var(--hero-background-color);
-  opacity: 100%;
+  opacity: 65%;
 }
 
 #about-content #social-icons {
@@ -391,6 +390,67 @@ hr {
   color: var(--accent-color);
 }
 
+.contact-page {
+  background-color: white;
+}
+
+.contact-page .navbar.navbar-expand-lg.navbar-light li a {
+  color: var(--accent-color);
+  opacity: 80%;
+}
+
+.contact-page .navbar.navbar-expand-lg.navbar-light li a:hover {
+  color: var(--about-accent-color);
+}
+
+.contact-card {
+  max-width: 450px;
+  margin: 100px auto;
+  border: 10px solid black !important;
+  background-image: url(/images/contactbackground.png);
+  background-repeat: no-repeat;
+}
+
+.contact-text {
+  margin: 20px;
+  color: white;
+}
+
+.contact-text h1 {
+  font-family: "Shadows Into Light", "cursive";
+  color: black;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.contact-text h2 {
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.contact-text p {
+  font-weight: bolder;
+  color: white;
+  font-size: 18px;
+}
+
+.contact-text i {
+  color: var(--about-accent-color);
+  font-size: 25px;
+}
+
+.contact-text i:hover {
+  opacity: 90%;
+}
+
+.footer-cred {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.footer-cred:visited {
+  color: var(--accent-color);
+}
 
 
 @media (max-width: 900px) {
@@ -426,7 +486,5 @@ hr {
   #about-card h2 {
     text-align: left;
   }
-
- 
 
 }
