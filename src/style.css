@@ -452,16 +452,17 @@ hr {
   }
 
   #home-intro h1 {
-    font-size: 200px;
+    font-size: 50px;
     text-align: left;
+    margin-left: 0;
   }
 
   #home-intro h2 {
-    font-size: 100px;
+    font-size: 35px;
   }
 
   #home-intro p {
-    margin-bottom: 20px !important;
+    margin-bottom: 20px;
     margin-left: 0;
   }
 
@@ -474,9 +475,12 @@ hr {
     padding-bottom: 10px !important;
   }
 
+  .about-heading {
+    font-size: 40px;
+  }
+
   #about-content .description {
     text-align: left;
-    line-height: 1.7;
   }
 
   #about-card h2 {
