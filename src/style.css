@@ -412,7 +412,7 @@ hr {
 .contact-card {
   max-width: 450px;
   margin: 100px auto;
-  border: 10px solid black !important;
+  border: 10px solid var(--hero-background-color) !important;
   background-image: url(/images/contactbackground.png);
   background-repeat: no-repeat;
 }
@@ -432,6 +432,7 @@ hr {
 .contact-text h2 {
   font-size: 25px;
   font-weight: bolder;
+  color: var(--hero-background-color);
 }
 
 .contact-text p {
