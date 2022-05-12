@@ -117,8 +117,8 @@ body {
 .project-card .overlay-content {
   width: 100%;
   height: 100%;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -150,7 +150,7 @@ body {
   font-family: var(--btn-branding-font);
   font-size: 17px;
   padding: 5px;
-  color: white;
+  color: black;
 }
 
 .project-link:hover {
@@ -158,7 +158,7 @@ body {
 }
 
 .project-link:visited {
-  color: white;
+  color: var(--default-color);
 }
 
 .project-description {
@@ -167,11 +167,13 @@ body {
 
 .project-description h1 {
   font-family: var(--heading-font);
-  text-decoration: underline 3px dashed var(--accent-color);
+  text-decoration: underline 3px dashed var(--default-color);
 }
 
 .project-description p {
   line-height: 1.7;
+  text-align: justify;
+  text-align-last: center;
 }
 
 .project-description h3 {
@@ -197,6 +199,10 @@ body {
 
 .project-description .link:hover {
   opacity: 70%;
+}
+
+.last-row {
+  margin: 0 27rem !important;
 }
 
 .about-hero .navbar.navbar-expand-lg.navbar-light li a {
@@ -242,6 +248,8 @@ body {
 #about-content .description {
   color: black;
   line-height: 2;
+  text-align: justify;
+  text-align-last: center;
 }
 
 #about-skills {
@@ -450,7 +458,7 @@ hr {
   color: var(--accent-color);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 912px) {
   #home-intro {
     padding: 20px 0 20px;
   }
@@ -479,6 +487,15 @@ hr {
     padding-bottom: 0 !important;
   }
 
+  .project-description p {
+    text-align: center;
+  }
+
+  .last-row {
+    margin: 0 !important;
+    margin-bottom: 20px !important;
+  }
+
   .about-heading {
     font-size: 40px;
   }
@@ -489,5 +506,12 @@ hr {
 
   #about-card h2 {
     text-align: left;
+  }
+}
+
+@media (max-width: 1024px) {
+  .last-row {
+    margin: 0 !important;
+    margin-bottom: 20px !important;
   }
 }
